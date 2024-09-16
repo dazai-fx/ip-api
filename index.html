@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHOIS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.purple.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.1.0/ol.css">
+</head>
+<body>
+    <main class="container">
+        <form id="form">
+            <label for="">
+                IP del usuario
+                <input type="text" placeholder="Introduce aquí una dirección IP" id="input" >
+                <small>Por ejemplo: 24.25.142.205</small>
+            </label>
+            <button type="submit" id="submit">Buscar información de la IP introducida</button>
+            <button type="submit" id="submit2">Buscar información de mi IP</button>
+        </form>
+        <div>
+            <pre id="results"></pre>
+        </div>
+        <div id="divMyIp">
+        </div>
+        <div id="divMap">
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.1.0/dist/ol.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
